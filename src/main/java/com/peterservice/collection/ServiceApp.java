@@ -1,19 +1,18 @@
 package com.peterservice.collection;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ImportResource;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.MessageSourceAccessor;
 
 /**
  * Example application
  */
 @Slf4j
-@SpringBootConfiguration
-@ImportResource("classpath:${spring.application.name}.xml")
+@SpringBootApplication
+@ImportResource("${spring.application.name}.xml")
 public class ServiceApp {
 
     public static void main(String[] args) {
