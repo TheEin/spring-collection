@@ -9,7 +9,14 @@
 
     <context:component-scan base-package="com.peterservice"/>
 
-    <context:property-placeholder location="service.properties"/>
+    <bean id="messageSource"
+          class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="messages"/>
+    </bean>
+
+    <bean id="messages" class="org.springframework.context.support.MessageSourceAccessor">
+        <constructor-arg ref="messageSource"/>
+    </bean>
 
     <bean id="child1" class="com.peterservice.collection.ChildComponent">
         <property name="peer" ref="child2"/>
@@ -19,9 +26,9 @@
         <property name="peer" ref="child1"/>
     </bean>
 
-    <bean id="parent" class="com.peterservice.collection.ParentComponent">
-        <property name="stringProp" value="${parent.stringProp}"/>
-        <property name="intProp" value="${parent.intProp}"/>
+    <bean id="parent1" class="com.peterservice.collection.ParentComponent">
+        <property name="stringProp" value="${parent1.stringProp}"/>
+        <property name="intProp" value="${parent1.intProp}"/>
         <property name="firstChild" ref="child1"/>
         <property name="secondChild" ref="child2"/>
     </bean>

@@ -1,8 +1,10 @@
 package com.peterservice.collection;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.MessageSourceAccessor;
 
@@ -10,26 +12,14 @@ import org.springframework.context.support.MessageSourceAccessor;
  * Example application
  */
 @Slf4j
+@SpringBootConfiguration
+@ImportResource("classpath:${spring.application.name}.xml")
 public class ServiceApp {
 
     public static void main(String[] args) {
-        String ctxLocation = "serviceContext.xml";
-
-        if (args.length > 0) {
-            ctxLocation = args[0];
-        }
-
-        ConfigurableApplicationContext parentCtx = new ClassPathXmlApplicationContext("applicationContext.xml");
-
-        PropertySourceBootstrapConfiguration bootstrapConfiguration = parentCtx.getBean(PropertySourceBootstrapConfiguration.class);
-
-        bootstrapConfiguration.initialize(parentCtx);
-
-        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(parentCtx);
-
-        ctx.setConfigLocation(ctxLocation);
-
-        ctx.refresh();
+        ConfigurableApplicationContext ctx = new SpringApplicationBuilder(ServiceApp.class)
+                .profiles("service")
+                .run(args);
 
         MessageSourceAccessor messages = ctx.getBean(MessageSourceAccessor.class);
 
@@ -52,6 +42,8 @@ public class ServiceApp {
         ParentComponent parent = ctx.getBean(ParentComponent.class);
 
         parent.hello();
+
+        log.info("Parent component: {}", parent);
 
         try {
             while (true)
