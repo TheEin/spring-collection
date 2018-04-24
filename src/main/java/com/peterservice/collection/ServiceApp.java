@@ -8,11 +8,14 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.support.MessageSourceAccessor;
 
 /**
- * Example application
+ * Example application.<br/>
+ * Run with args {@code --spring.config.location=C:\temp\}<br/>
+ * to see that additional {@code C:\temp\bootstrap.properties} will overwrite some properties.<br/>
+ * It emulates staging configuration.
  */
 @Slf4j
 @SpringBootApplication
-@ImportResource("${spring.application.name}.xml")
+@ImportResource({"applicationContext.xml", "${spring.application.name}.xml"})
 public class ServiceApp {
 
     public static void main(String[] args) {
