@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1889eb26-c79e-4c73-99b4-d7eae576c365" name="Default" comment="POM cleaning">
+    <list default="true" id="1889eb26-c79e-4c73-99b4-d7eae576c365" name="Default" comment="Added default YAML configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/peterservice/collection/ServiceAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/peterservice/collection/ServiceAppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,7 +24,87 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="197" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="197">
+      <file leaf-file-name="bootstrap-service.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap-service.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChildComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/peterservice/collection/ChildComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParentComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/peterservice/collection/ParentComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/peterservice/collection/ServiceApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceAppTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/peterservice/collection/ServiceAppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="54" column="61" lean-forward="true" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-service.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-service.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,9 +129,9 @@
       <find>location</find>
       <find>spring.main.sources</find>
       <find>config.location</find>
-      <find />
+      <find>Fetching config from server at</find>
       <find>snake</find>
-      <find />
+      <find>Located property source</find>
       <find>spring.cloud.config</find>
       <find>spring.cloud.config.enabled</find>
       <find>spring.cloud.zookeeper.config</find>
@@ -72,21 +154,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peterservice/collection/ParentComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peterservice/collection/ChildComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peterservice/collection/App.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peterservice/collection/ServiceAppTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/service.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/default.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/serviceContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application-service.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/bootstrap-service.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/bootstrap.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peterservice/collection/ServiceApp.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-service.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peterservice/collection/ServiceApp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peterservice/collection/ParentComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/bootstrap-service.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-service.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/bootstrap.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peterservice/collection/ServiceAppTest.java" />
       </list>
     </option>
   </component>
@@ -247,9 +331,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ServiceAppTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ServiceAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-collection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peterservice.collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.peterservice.collection" />
+      <option name="MAIN_CLASS_NAME" value="com.peterservice.collection.ServiceAppTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -Dspring.config.location=C:\temp\" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -301,8 +408,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ServiceAppTest" />
+      <item itemvalue="Spring Boot.ServiceApp" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServiceAppTest" />
         <item itemvalue="Spring Boot.ServiceApp" />
       </list>
     </recent_temporary>
@@ -326,7 +438,7 @@
       <workItem from="1524422869636" duration="243000" />
       <workItem from="1524486271537" duration="1482000" />
       <workItem from="1524487805076" duration="19079000" />
-      <workItem from="1524556769150" duration="2925000" />
+      <workItem from="1524556769150" duration="6795000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1524215660681</created>
@@ -363,14 +475,61 @@
       <option name="project" value="LOCAL" />
       <updated>1524565967045</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="POM cleaning">
+      <created>1524566588811</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1524566588811</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added default YAML configuration">
+      <created>1524567603667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524567603667</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ServiceAppTest - 2018.04.24 at 15h 56m 18s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 15h 56m 37s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 15h 58m 05s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 16h 00m 43s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 16h 01m 46s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 16h 02m 44s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 16h 03m 22s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 16h 03m 46s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 16h 06m 55s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceAppTest - 2018.04.24 at 16h 08m 37s.xml">
+      <configuration name="ServiceAppTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51177000" />
+    <option name="totallyTimeSpent" value="55047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -382,15 +541,15 @@
       <window_info anchor="right" auto_hide="true" id="Maven Projects" order="3" type="SLIDING" weight="0.2541345" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3952282" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" type="SLIDING" weight="0.4159751" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32987553" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49889746" weight="0.32987553" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48027444" visible="true" weight="0.28445426" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48029044" visible="true" weight="0.2783903" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.51972556" side_tool="true" visible="true" weight="0.28445426" />
+      <window_info id="Structure" order="1" sideWeight="0.5197095" side_tool="true" visible="true" weight="0.2783903" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24972437" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -416,7 +575,9 @@
     <MESSAGE value="Puzzling with the boot" />
     <MESSAGE value="Working with standard @SpringBootApplication" />
     <MESSAGE value="Adding comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding comments" />
+    <MESSAGE value="POM cleaning" />
+    <MESSAGE value="Added default YAML configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added default YAML configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -453,7 +614,7 @@
           <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="58" />
+      <option name="time" value="60" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -537,27 +698,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.12.RELEASE/spring-boot-1.5.12.RELEASE-sources.jar!/org/springframework/boot/SpringApplicationRunListeners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.12.RELEASE/spring-boot-1.5.12.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="295" selection-start-line="295" selection-end-line="295" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/1.3.3.RELEASE/spring-cloud-context-1.3.3.RELEASE-sources.jar!/org/springframework/cloud/bootstrap/BootstrapApplicationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="91" column="81" selection-start-line="91" selection-start-column="81" selection-end-line="91" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.12.RELEASE/spring-boot-1.5.12.RELEASE-sources.jar!/org/springframework/boot/Banner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
@@ -576,13 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peterservice/collection/ServiceAppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -755,61 +888,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.12.RELEASE/spring-boot-autoconfigure-1.5.12.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-service.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peterservice/collection/ChildComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peterservice/collection/ParentComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#706#707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="82" selection-start-column="82" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap-service.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.16.RELEASE/spring-context-4.3.16.RELEASE.jar!/org/springframework/context/config/spring-context-4.1.xsd">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="73" lean-forward="true" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-config/1.4.3.RELEASE/spring-cloud-starter-config-1.4.3.RELEASE.jar!/META-INF/maven/org.springframework.cloud/spring-cloud-starter-config/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -862,20 +943,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.12.RELEASE/spring-boot-autoconfigure-1.5.12.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="54" column="41" lean-forward="true" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peterservice/collection/ParentComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap-service.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peterservice/collection/ChildComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/1.5.12.RELEASE/spring-boot-test-1.5.12.RELEASE-sources.jar!/org/springframework/boot/test/context/SpringBootTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/peterservice/collection/ServiceApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="12">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.16.RELEASE/spring-test-4.3.16.RELEASE-sources.jar!/org/springframework/test/context/testng/AbstractTestNGSpringContextTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="641">
+          <caret line="54" column="61" lean-forward="true" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap-service.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peterservice/collection/ServiceAppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
