@@ -1,0 +1,6 @@
+# Default Collection Service configuration
+
+parent1:
+  stringProp: parent default string
+  intProp:    50
+  longProp:   50000

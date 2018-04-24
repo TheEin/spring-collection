@@ -20,6 +20,7 @@
     <bean id="parent1" class="com.peterservice.collection.ParentComponent">
         <property name="stringProp" value="${parent1.stringProp}"/>
         <property name="intProp" value="${parent1.intProp}"/>
+        <property name="longProp" value="${parent1.longProp}"/>
         <property name="firstChild" ref="child1"/>
         <property name="secondChild" ref="child2"/>
     </bean>

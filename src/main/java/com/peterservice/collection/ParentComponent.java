@@ -20,6 +20,10 @@ public class ParentComponent {
     private int intProp;
 
     @Getter
+    @Setter
+    private int longProp;
+
+    @Getter
     private ChildComponent firstChild;
 
     @Getter
