@@ -22,7 +22,7 @@ import static org.junit.Assert.*;
 public class ServiceAppTest {
 
     @Autowired
-    ApplicationContext ctx;
+    private ApplicationContext ctx;
 
     @Test
     public void shouldAnswerWithTrue() {

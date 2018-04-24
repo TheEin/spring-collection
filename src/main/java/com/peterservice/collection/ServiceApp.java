@@ -48,8 +48,18 @@ public class ServiceApp {
         log.info("Parent component: {}", parent);
 
         try {
-            while (true)
-                Thread.sleep(1_000_000);
+            int i = 0;
+            while (true) {
+                Thread.sleep(1_000);
+
+                log.debug(messages.getMessage("app.heartbeat"));
+
+                if (++i == 3) {
+                    i = 0;
+
+                    log.debug("Parent component: {}", parent);
+                }
+            }
         } catch (InterruptedException ignore) {
         } finally {
             log.info(messages.getMessage("app.exiting", "Application exiting"));

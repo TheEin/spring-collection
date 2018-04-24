@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.MessageSourceAccessor;
 
 @Slf4j
-@ToString(exclude = "messages")
-public class ParentComponent {
+@ToString(exclude = "messages", callSuper = true)
+public class ParentComponent extends CountableComponent {
 
     @Getter
     @Setter
